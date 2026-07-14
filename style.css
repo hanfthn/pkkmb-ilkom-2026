@@ -25,6 +25,8 @@ body {
     background: #090712;
     color: #fff;
     overflow-x: hidden;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .background {
@@ -44,6 +46,7 @@ body {
 main {
     width: 100%;
     min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
