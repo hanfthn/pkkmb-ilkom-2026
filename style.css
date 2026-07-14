@@ -1,0 +1,247 @@
+/* ================= CUSTOM FONT ================= */
+@font-face {
+    font-family: "NorseFont";
+    src: url("assets/Norse.otf") format("opentype"); 
+}
+
+@font-face {
+    font-family: "NorseBold";
+    src: url("assets/NorseBold.otf") format("opentype"); 
+}
+
+@font-face {
+    font-family: "Eleanora";
+    src: url("assets/Eleanora.otf") format("opentype"); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #090712;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    background: url("assets/background.png") center center/cover no-repeat;
+    z-index: -3;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.28), rgba(0,0,0,.55));
+    z-index: -2;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    animation: fadeUp .8s ease;
+}
+
+.logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 18px;
+}
+
+h1 {
+    font-family: "NorseBold", "Cinzel", serif; 
+    font-size: 85px; 
+    line-height: 1.1;
+    margin-bottom: 18px;
+    color: #E98F43; 
+    text-shadow: 0 0 15px rgba(233, 143, 67, 0.5);
+}
+
+p {
+    font-family: "Eleanora", "Poppins", sans-serif; 
+    font-size: 24px; 
+    margin-bottom: 40px;
+    color: #AAA3C6; 
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* ================= MENU ================= */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    width: 520px;
+    height: 100px;
+
+    cursor: pointer;
+
+    transition: transform .25s ease;
+}
+
+.panel {
+    position: relative;
+}
+
+.panel-frame {
+    width: 520px;
+    display: block;
+
+    transition:
+        filter .25s ease,
+        transform .25s ease;
+}
+
+.panel-text {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "NorseFont", "Cinzel", serif;
+    font-size: 32px;
+    color: #E0A7AF;
+
+    transition:
+        color .25s ease,
+        text-shadow .25s ease,
+        letter-spacing .25s ease;
+}
+
+.circle {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 95px;
+    height: 95px;
+
+    z-index: 5;
+}
+
+.circle-frame {
+    width: 100%;
+    display: block;
+
+    transition: filter .25s ease;
+}
+
+.circle-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+
+    transition:
+        transform .25s ease,
+        filter .25s ease;
+}
+
+/* ================= HOVER ================= */
+
+.menu-button:hover {
+    transform: translateY(-5px);
+}
+
+/* Glow tombol */
+
+.menu-button:hover .panel-frame {
+    filter:
+        brightness(1.12)
+        drop-shadow(0 0 8px rgba(180, 100, 255, .7))
+        drop-shadow(0 0 20px rgba(180, 100, 255, .4));
+}
+
+/* Glow lingkaran TANPA membesar */
+
+.menu-button:hover .circle-frame {
+    filter:
+        brightness(1.15)
+        drop-shadow(0 0 10px rgba(180, 100, 255, .8));
+}
+
+/* Icon sedikit membesar */
+
+.menu-button:hover .circle-icon {
+    transform: translate(-50%, -50%) scale(1.08);
+
+    filter:
+        brightness(1.2)
+        drop-shadow(0 0 6px rgba(255,255,255,.5));
+}
+
+/* Teks menyala */
+
+.menu-button:hover .panel-text {
+    color: #FFE5FF;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 8px rgba(255,180,255,.9),
+        0 0 18px rgba(180,100,255,.8);
+}
+
+/* Klik */
+
+.menu-button:active {
+    transform: translateY(-2px) scale(.98);
+}
+
+/* ================= RESPONSIVE (HP) ================= */
+
+@media (max-width: 520px) {
+    h1 { font-size: 40px; }
+    p { font-size: 16px; margin-bottom: 30px; }
+
+    .menu-button {
+        width: 330px; /* Lebarkan tombol */
+        height: 80px;
+    }
+
+    .panel-frame { width: 330px; }
+
+    .circle {
+        width: 80px; height: 80px;
+        left: -10px;
+    }
+
+    .circle-icon {
+        width: 45px; height: 45px;
+    }
+
+    .panel-text { font-size: 18px; }
+}
