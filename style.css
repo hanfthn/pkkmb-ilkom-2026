@@ -60,10 +60,9 @@ main {
     animation: fadeUp .8s ease;
 }
 
-.logo {
-    width: 120px;
-    display: block;
-    margin: 0 auto 18px;
+.logo{
+    width: 160px;
+    margin: 0 auto 15px;
 }
 
 .title {
