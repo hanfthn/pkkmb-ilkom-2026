@@ -5,13 +5,8 @@
 }
 
 @font-face {
-    font-family: "NorseBold";
-    src: url("assets/NorseBold.otf") format("opentype"); 
-}
-
-@font-face {
-    font-family: "Eleanora";
-    src: url("assets/Eleanora.otf") format("opentype"); 
+    font-family: "Celtic";
+    src: url("assets/Celtic.ttf") format("truetype");
 }
 
 * {
@@ -74,7 +69,6 @@ main {
     filter:
         drop-shadow(0 0 10px rgba(233,143,67,.5))
         drop-shadow(0 0 25px rgba(233,143,67,.3));
-}
 }
 
 p {
