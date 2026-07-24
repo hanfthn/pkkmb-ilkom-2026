@@ -56,27 +56,40 @@ main {
 }
 
 .logo{
-    width: 200px;
-    margin: 0 auto 15px;
+    width:170px;
+    display:block;
+    margin:0 auto 12px;
 }
 
-.title {
-    width: 380px;
-    max-width: 90%;
+.title{
+    width:430px;
+    max-width:90%;
     display:block;
-    margin:0 auto 15px;
+    margin:0 auto 10px;
 
     filter:
-        drop-shadow(0 0 10px rgba(233,143,67,.5))
-        drop-shadow(0 0 25px rgba(233,143,67,.3));
+        drop-shadow(0 0 10px rgba(241,211,0,.25))
+        drop-shadow(0 0 20px rgba(241,211,0,.15));
 }
 
-p {
-    font-family: "Eleanora", "Poppins", sans-serif; 
-    font-size: 24px; 
-    margin-bottom: 40px;
-    color: #AAA3C6; 
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+.subtitle{
+    font-family:"Celtic", serif;
+    font-size:24px;
+    color:#F1D300;
+    letter-spacing:1px;
+    margin-bottom:5px;
+
+    text-shadow:
+        0 0 8px rgba(241,211,0,.3),
+        0 2px 8px rgba(0,0,0,.7);
+}
+
+.campus{
+    font-family:"Poppins", sans-serif;
+    font-size:18px;
+    font-weight:500;
+    color:#EAEAEA;
+    margin-bottom:40px;
 }
 
 /* ================= MENU ================= */
