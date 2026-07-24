@@ -186,9 +186,9 @@ p {
 
 .menu-button:hover .panel-frame {
     filter:
-        brightness(1.12)
-        drop-shadow(0 0 8px rgba(180, 100, 255, .7))
-        drop-shadow(0 0 20px rgba(180, 100, 255, .4));
+        brightness(1.15)
+        drop-shadow(0 0 8px #F1D300)
+        drop-shadow(0 0 20px #F1D300);
 }
 
 /* Glow lingkaran TANPA membesar */
@@ -196,7 +196,8 @@ p {
 .menu-button:hover .circle-frame {
     filter:
         brightness(1.15)
-        drop-shadow(0 0 10px rgba(180, 100, 255, .8));
+        drop-shadow(0 0 10px #F1D300)
+        drop-shadow(0 0 18px #F1D300);
 }
 
 /* Icon sedikit membesar */
@@ -206,19 +207,20 @@ p {
 
     filter:
         brightness(1.2)
-        drop-shadow(0 0 6px rgba(255,255,255,.5));
+        drop-shadow(0 0 8px #F1D300);
 }
 
 /* Teks menyala */
 
 .menu-button:hover .panel-text {
-    color: #FFE5FF;
+    color: #FFF9C4;
 
     letter-spacing: 2px;
 
     text-shadow:
-        0 0 8px rgba(255,180,255,.9),
-        0 0 18px rgba(180,100,255,.8);
+        0 0 8px #F1D300,
+        0 0 18px #F1D300,
+        0 0 30px #F1D300;
 }
 
 /* Klik */
