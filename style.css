@@ -6,7 +6,9 @@
 
 @font-face {
     font-family: "Celtic";
-    src: url("assets/Celtic.ttf") format("truetype");
+    src: url("assets/CELTG___.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -73,9 +75,16 @@ main {
 }
 
 .subtitle{
-    font-family: Arial, sans-serif;
-    color:red;
-    font-size:40px;
+    font-family: "Celtic", serif;
+    font-size: 26px;
+    font-weight: normal;
+    color: #F1D300;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+
+    text-shadow:
+        0 0 8px rgba(241,211,0,.3),
+        0 2px 8px rgba(0,0,0,.7);
 }
 
 .campus{
