@@ -73,15 +73,9 @@ main {
 }
 
 .subtitle{
-    font-family:"Celtic", serif;
-    font-size:24px;
-    color:#F1D300;
-    letter-spacing:1px;
-    margin-bottom:5px;
-
-    text-shadow:
-        0 0 8px rgba(241,211,0,.3),
-        0 2px 8px rgba(0,0,0,.7);
+    font-family: Arial, sans-serif;
+    color:red;
+    font-size:40px;
 }
 
 .campus{
