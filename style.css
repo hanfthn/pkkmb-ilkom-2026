@@ -66,10 +66,10 @@ main {
 }
 
 .title {
-    width: 500px;
+    width: 380px;
     max-width: 90%;
-    display: block;
-    margin: 0 auto 20px;
+    display:block;
+    margin:0 auto 15px;
 
     filter:
         drop-shadow(0 0 10px rgba(233,143,67,.5))
